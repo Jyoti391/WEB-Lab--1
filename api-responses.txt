@@ -1,2 +1,6 @@
 "GET /health response (pretty):" 
 -e "\n" 
+\n1. Valid ID (GET /task/2):
+{"id":2,"title":"Implement auth","completed":false,"priority":"medium","createdAt":"2025-11-02T11:30:00.000Z"}\n\n2. Nonexistent ID (GET /task/999):
+{"error":"Task not found"}\n\n3. Invalid ID (GET /task/abc):
+{"error":"Invalid ID format"}\n
